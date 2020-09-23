@@ -10,3 +10,6 @@ class Solution :
         return s
 
 
+if __name__ == '__main__' : 
+    ob = Solution([1,2,3,4,5])
+    print(ob.sum())
