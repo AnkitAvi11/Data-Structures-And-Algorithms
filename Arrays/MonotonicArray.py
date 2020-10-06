@@ -7,7 +7,7 @@ def isIncreasing(arr : list) -> bool :
 
     return True
 
-def isDecreasing(arr) : 
+def isDecreasing(arr : list) -> bool : 
     for i in range(len(arr) - 1) : 
         if arr[i] < arr[i+1] : 
             return False
@@ -22,3 +22,4 @@ def isMonotic(arr : list) -> bool :
 
 if __name__ == '__main__' : 
     print(isMonotic([-1,-5,-10,-1100, -1101, -900]))
+    # output = 1 
