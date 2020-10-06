@@ -24,3 +24,4 @@ def sum_of_three(arr, target) :
 
 if __name__ == '__main__' : 
     print(sum_of_three([3,5,-4,8,11,1,-1,6], 10))
+      # -4 -1 1 3 5 6 8 11 
