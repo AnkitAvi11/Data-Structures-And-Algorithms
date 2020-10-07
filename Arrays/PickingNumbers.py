@@ -1,4 +1,8 @@
 
+#   hackerrank problem of problem solving 
+#   problem statement : Picking Numbers
+
+
 def pickingNumbers(arr) : 
     left = 0
     max_sum = 0;max_left = 0;max_right=0
@@ -17,3 +21,4 @@ def pickingNumbers(arr) :
 
 if __name__ == "__main__" : 
     print(pickingNumbers([1, 2, 2, 3, 1, 2]))
+

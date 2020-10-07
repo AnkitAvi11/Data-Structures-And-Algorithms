@@ -15,16 +15,18 @@ def smallestDifference(arr1 : list, arr2 : list) :
             current = snum - fnum
             i += 1
         elif snum < fnum : 
-            current = snum - fnum
+            current = fnum - snum
             j += 1
         else : 
             return [fnum, snum]
 
+        #   updating the smallest difference pair if found a new one
         if current < smallest : 
             smallest = current
-            smallestPair.append((fnum, snum))
+            smallestPair = [fnum, snum]
             
-
+    return smallestPair
 
 if __name__ == '__main__' : 
-    print(smallestDifference([12,3,45,6], [2,4,3,5]))
+    print(smallestDifference([12,3,45,6], [2,4,4,5]))
+    

@@ -1,5 +1,8 @@
 #   Monotonic array optimised solution
+#   Time complexity = O(n)  |   Space Complexity : O(1)
 
+
+#   method to check if the direction breaks
 def directionChanged(direction, previous, current) : 
     difference = current - previous
     print(direction, difference)
@@ -8,6 +11,8 @@ def directionChanged(direction, previous, current) :
     
     return difference > 0
 
+
+#   function to check if the array is monotic or not
 def isMonotonicArray(arr : list) -> bool : 
     
     if len(arr) <= 2 : 
@@ -26,5 +31,6 @@ def isMonotonicArray(arr : list) -> bool :
     return False
 
 
+#   driver code
 if __name__ == '__main__' : 
     print(isMonotonicArray([1,2,3,4,5]))
