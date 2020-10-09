@@ -1,11 +1,11 @@
-# Algo-Expert Solutions
+# Algo-Expert | LeetCode | Hackerrank Solutions
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-54-orange.svg?style=flat-square)](#contributors-)
 [![Star on GitHub](https://img.shields.io/github/stars/all-contributors/all-contributors.svg?style=social)](https://github.com/AnkitKumar1311/Data-Structures-And-Algorithms/stargazers)
 
 ---
 
-This repository is to maintain the solutions of **Algo-Expert Questions**. It offers with the following resources which are helpful for the students:
+This repository is mainly to maintain the solutions of **Algo-Expert Questions** alongwith **Leetcode** & **Hackerrank**. Algo-Expert offers with the following resources which are helpful for the students:
 
 1. 100 Hand Picked Questions
 2. 70+ Hours of Video Explanations
