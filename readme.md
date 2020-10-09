@@ -24,7 +24,7 @@ People who contributed in this project
   <tr>
     <td align="center"><a href="https://github.com/AnkitKumar1311"><img src="https://avatars2.githubusercontent.com/u/54996872?s=400&u=75e479e18da4b2201d4a8caae474d58bba7abe88&v=4" width="100px;" alt=""/><br /><sub><b>Ankit Singh</b></sub></a>
     </td>
-    <td align="center"><a href="https://linkedin.com/in/ayushkr459"><img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;" alt=""/><br /><sub><b>Ayush Kumar</b></sub></a>
+    <td align="center"><a href="https://linkedin.com/in/ayushkr459"><img src="https://avatars3.githubusercontent.com/u/56274365?s=460&u=6f557bae099bde24437053c5980625e1f4c632e8&v=4" width="100px;" alt=""/><br /><sub><b>Ayush Kumar</b></sub></a>
     </td>
     <td align="center"><a href="https://github.com/saransh-ssh"><img src="https://avatars2.githubusercontent.com/u/69217546?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Saransh-ssh</b></sub></a>
     </td>
