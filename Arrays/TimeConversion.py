@@ -39,23 +39,27 @@ Sample Output 0
 """
 
 def timeConversion(string : str) : 
+    #   getting each part of the string
     new_str = string.split(":")
     hours = new_str[0]
     minutes = new_str[1]
     seconds = new_str[2][:2]
     am_pm = new_str[2][2:]
 
+    #   variable holding the result of the array
     result = ""
 
+    #   checking if the time is PM
     if am_pm == 'PM' : 
         if int(hours) < 12 : 
             hours = str(int(hours) + 12)
 
+    #   checking if the time is AM
     if am_pm == 'AM' : 
         if int(hours) == 12 : 
             hours = "00"
     
-    
+    #   returning the output in the correct format
     return ":".join([str(hours), str(minutes), str(seconds)])
     
 
