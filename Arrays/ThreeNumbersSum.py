@@ -7,7 +7,7 @@ def sum_of_three(arr, target) :
     
     for i in range(len(arr)-2) : 
         left = i+1;right=len(arr)-1
-
+ 
         while left < right : 
             current_sum = arr[i] + arr[left] + arr[right]
             if current_sum == target : 
