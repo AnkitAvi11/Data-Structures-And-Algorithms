@@ -1,42 +1,31 @@
-# class Solution : 
 
-#     def __init__(self, username, email, roll) : 
-#         self.username = username
-#         self.email = email
-#         self.roll = roll
+from abc import ABC, abstractclassmethod, abstractmethod
 
-#     def __str__(self) : 
-#         return self.username
+class AbstractClass(ABC) : 
+    @abstractmethod
+    def myabstractmethod(self) : 
+        pass
 
-
-# class ExtendingClass(Solution) : 
-
-#     def __init__(self, username, email, roll , password) : 
-#         super().__init__(username, email, roll)
-
-#     def __str__(self) : 
-#         string = super().__str__()
-#         return string
-
-    
-# if __name__ == '__main__' : 
-#     ob = Solution('ankit', 'asd')
-
-class MyIterator : 
+class MyClass : 
 
     def __iter__(self) : 
         self.num = 0
         return self
 
     def __next__(self) : 
-        if self.num == 10 : 
-            print("List is done")
-            raise StopIteration
+        if self.num < 10 : 
+            self.num += 1
         else : 
-            self.num = self.num + 1
-            return self.num
+            raise StopIteration
+
+        return self.num
+
+import os
 
 if __name__ == '__main__' : 
-    ob = MyIterator()
-    for i in ob : 
-        print(i)
+    # ob = MyClass()
+    # for el in ob : 
+    #     print(el)
+    os.chdir("../")
+    print(os.listdir())
+

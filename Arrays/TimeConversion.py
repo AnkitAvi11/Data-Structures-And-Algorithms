@@ -8,7 +8,7 @@ Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
 Example
 
 
-Return '12:01:00'.
+Input '12:01:00AM'.
 
 
 Return '00:01:00'.
@@ -36,6 +36,10 @@ Sample Input 0
 Sample Output 0
 
 19:05:45
+
+
+Hints : You will have to learn about split(), join(), substring(), 
+
 """
 
 def timeConversion(string : str) : 
@@ -61,7 +65,6 @@ def timeConversion(string : str) :
     
     #   returning the output in the correct format
     return ":".join([str(hours), str(minutes), str(seconds)])
-    
 
 
 if __name__ == '__main__' : 

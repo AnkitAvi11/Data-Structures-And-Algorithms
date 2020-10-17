@@ -5,7 +5,7 @@
 #   method to check if the direction breaks
 def directionChanged(direction, previous, current) : 
     difference = current - previous
-    print(direction, difference)
+    
     if direction > 0 : 
         return difference < 0
     
