@@ -1,0 +1,1 @@
+SELECT Doctor , Professor , Singer , Actor FROM ( SELECT * FROM( SELECT occupation,name, ROW_NUMBER()OVER(PARTITION By occupation order by name asc) rownumber FROM OCCUPATIONS ) PIVOT( MIN(name) FOR occupation IN ( 'Doctor' Doctor, 'Professor' Professor, 'Singer' Singer, 'Actor' Actor) ) ORDER BY rownumber );
