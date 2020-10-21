@@ -18,9 +18,7 @@ def optimisedmerge(arr, arr2) :
     
     gap = math.ceil((len(arr) + len(arr2)) / 2)
 
-    while gap != 0 : 
-
-        
+    while gap != 0 :      
                 
         gap //= 2
 
