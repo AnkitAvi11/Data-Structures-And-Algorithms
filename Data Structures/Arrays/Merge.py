@@ -1,27 +1,29 @@
-#   Merge two arrays withouy any extra space i.e. in O(1) space complexity
-import math
+#   program to merge to arrays a and b which are in ascending order and the result should be in descending order
 
-#   naive approach
-def merge(arr : list, brr : list) -> list : 
 
-    i = 0; j = 0 
+def merge(arr : list, arr2 : list) : 
+    i, j = 0, 0
+    result = list()
 
-    while i <= len(arr) and j <= len(brr) : 
-        pass
+    while i < len(arr) and j < len(arr2) : 
+        if arr[i] <= arr2[j] : 
+            result.append(arr[i])
+            i += 1
+
+        elif arr[i] >= arr2[j] : 
+            result.append(arr2[j])
+            j += 1
+
+        
+    if i == len(arr) : 
+        result.append(arr2[j])
+        j += 1
     else : 
-        pass
+        result.append(arr[i])
+        i += 1
+
+    return result
 
 
-#   optimised approach using the GAP Algorithm
-
-def optimisedmerge(arr, arr2) : 
-    
-    gap = math.ceil((len(arr) + len(arr2)) / 2)
-
-    while gap != 0 :      
-                
-        gap //= 2
-
-    
-            
-            
+if __name__ == '__main__' : 
+    print(merge([1,3,5,7,9],[2,4,6,8]))
