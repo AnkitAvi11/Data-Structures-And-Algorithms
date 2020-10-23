@@ -66,7 +66,10 @@ def sortArray(arr) :
 
 
 if __name__ == '__main__' : 
+    #   an example array
     arr = [1,2,0,0,1,2,0,0,1,2,2,0,0]
+
+    #   sorting the array
     sortArray(arr)
     print(arr)
-        
+            
