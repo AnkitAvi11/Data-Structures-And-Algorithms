@@ -90,8 +90,22 @@ class LinkedList :
         print("Element was not found")       
         
 
+    #   searching an element in the linked list
+    def searchNode(self, sk) : 
+        ptr = self.head
+        if ptr is None : 
+            print("List is empty");return
+
+        while ptr is not None : 
+            if ptr.data == sk : 
+                print("Element was found in the list")
+                return
+            ptr = ptr.next_node
+
+        print("Element was not found in the list")
 
 if __name__ == '__main__' : 
+
     mylist = LinkedList()
     mylist.insertData(5)
     mylist.insertData(4)
@@ -105,5 +119,8 @@ if __name__ == '__main__' :
     mylist.remove(2)
     mylist.remove(1)
 
+    mylist.searchNode(5)
+
     mylist.traverse()
+
 
