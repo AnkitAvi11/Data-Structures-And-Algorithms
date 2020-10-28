@@ -59,6 +59,38 @@ class LinkedList :
         self.recursiveTraverse(main_node.next_node)
 
 
+    
+    #   function to delete a node from the linked list using the data
+    def remove(self, sk) : 
+        if self.head == None : 
+            print("The lis is empty")
+            return
+
+        if self.head.data == sk : 
+            ptr = self.head
+            self.head = ptr.next_node
+            del ptr
+            print("Element deleted")
+            return
+
+        qptr = self.head 
+        
+        while qptr.next_node != None : 
+
+            if qptr.next_node.data == sk : 
+                ptr = qptr.next_node
+                qptr.next_node = ptr.next_node
+                del ptr
+                print("Element deleted ")
+                return
+
+
+            qptr = qptr.next_node
+
+        print("Element was not found")       
+        
+
+
 if __name__ == '__main__' : 
     mylist = LinkedList()
     mylist.insertData(5)
@@ -67,5 +99,11 @@ if __name__ == '__main__' :
     mylist.insertData(2)
     mylist.insertData(1)  
 
-    mylist.recursiveTraverse(mylist.gethead())
+    mylist.traverse()
+
+    mylist.remove(5)
+    mylist.remove(2)
+    mylist.remove(1)
+
+    mylist.traverse()
 
