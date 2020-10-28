@@ -1,3 +1,4 @@
+
 """
 PROGRAM TO CREATE A LINKED LIST IN PYTHON
 """
@@ -103,6 +104,21 @@ class LinkedList :
             ptr = ptr.next_node
 
         print("Element was not found in the list")
+
+
+
+    #   deleting the first node from the list
+    def deleteFirst(self) : 
+        if self.head is None : 
+            print("list is empty")
+            return
+
+        ptr = self.head
+        self.head = ptr.next_node
+        num = ptr.data
+        del ptr
+        print("Deleted the first node")
+        return num
 
 if __name__ == '__main__' : 
 
