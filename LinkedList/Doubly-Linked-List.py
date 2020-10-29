@@ -49,6 +49,21 @@ class DoublyLinkedList :
 
     
 
+    #   function to search for a node element in the doubly linked list
+    def searchNode(self, sk): 
+        if self.head is None : 
+            print("List is empty")
+            return
+        
+        ptr = self.head
+        while ptr!=None : 
+            if ptr.data == sk : 
+                print("Node was found")
+                return
+
+        print("Node was not found")
+
+
 if __name__ == '__main__' : 
     mylist = DoublyLinkedList()
     mylist.insertNode(1)
