@@ -64,6 +64,25 @@ class DoublyLinkedList :
         print("Node was not found")
 
 
+    #   function to delete a node from the list
+    def deleteNode(self, sk) : 
+        if self.head is None : 
+            print("List is empty")
+            return
+        
+        if self.head.data == sk : 
+            ptr = self.head 
+            self.head.next_node = ptr.next_node
+            del ptr
+            print("node deleted")
+            return
+
+        ptr = self.head
+        while ptr.next_node is not None : 
+            pass
+        
+
+
 if __name__ == '__main__' : 
     mylist = DoublyLinkedList()
     mylist.insertNode(1)
