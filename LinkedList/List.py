@@ -122,7 +122,7 @@ class LinkedList :
 
     
 
-    #   function to delete duplicate nodes from the linked list
+    #   function to delete duplicate nodes from the linked list in O(n)
     def delDuplicate(self) : 
         dup = set()
         if self.head is None : 
@@ -145,6 +145,19 @@ class LinkedList :
                 ptr = ptr.next_node
 
             
+    #   function to convert a singly linked list to a circular linked list
+    def convertCircular(self) : 
+        
+        if self.head is None : 
+            print("List is empty")
+            return
+        
+        ptr = self.head 
+
+        while ptr.next_node is not None : 
+            ptr = ptr.next_node
+
+        ptr.next_node = self.head
 
 
 
