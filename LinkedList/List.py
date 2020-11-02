@@ -120,6 +120,34 @@ class LinkedList :
         print("Deleted the first node")
         return num
 
+    
+
+    #   function to delete duplicate nodes from the linked list
+    def delDuplicate(self) : 
+        dup = set()
+        if self.head is None : 
+            print("List is empty")
+            return
+
+        ptr = self.head;prev=self.head
+
+        dup.add(ptr.data)
+        ptr = ptr.next_node
+
+        while ptr is not None : 
+            if ptr.data in dup : 
+                prev.next_node = ptr.next_node
+                del ptr
+                ptr = prev.next_node
+            else : 
+                dup.add(ptr.data)
+                prev = ptr
+                ptr = ptr.next_node
+
+            
+
+
+
 if __name__ == '__main__' : 
 
     mylist = LinkedList()
@@ -127,15 +155,12 @@ if __name__ == '__main__' :
     mylist.insertData(4)
     mylist.insertData(3)
     mylist.insertData(2)
-    mylist.insertData(1)  
+    mylist.insertData(5)  
 
     mylist.traverse()
 
-    mylist.remove(5)
-    mylist.remove(2)
-    mylist.remove(1)
-
-    mylist.searchNode(5)
+    print()
+    mylist.delDuplicate()  
 
     mylist.traverse()
 
