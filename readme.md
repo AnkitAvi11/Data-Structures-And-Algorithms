@@ -5,7 +5,7 @@
 
 ---
 
-This repository is mainly to maintain the solutions of the **Algo-Expert Questions** alongwith **Leetcode** & **Hackerrank**. Algo-Expert offers with the following resources which are helpful for the students:
+This repository is mainly to maintain the solutions of **Algo-Expert Questions** alongwith **Leetcode** & **Hackerrank**. Algo-Expert offers with the following resources which are helpful for the students:
 
 1. 100 Hand Picked Questions
 2. 70+ Hours of Video Explanations
