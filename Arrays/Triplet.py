@@ -22,5 +22,5 @@ def sum_of_three(arr) :
         print("Done with the loop")
     return result+1
 
-if __name__ == '__main__' :     
+if __name__ == '__main__' :
     print(sum_of_three([2,5,6,8,10]))
