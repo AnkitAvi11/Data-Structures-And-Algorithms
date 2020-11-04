@@ -37,6 +37,7 @@ public class Unique {
         String str = "priyaa"; 
 
         int[] arr = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        
         boolean flag = true;
 
         str = str.toUpperCase();
