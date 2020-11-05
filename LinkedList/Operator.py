@@ -54,7 +54,6 @@ class Overloading :
 
 
 if __name__ == '__main__' : 
-    ob = Overloading(10)
-    ob1 = Overloading(20)
+    from collections import Counter
 
-    print(ob//ob1)
+    print(Counter(['a', 'b', 'c', 'd', 'a']))
