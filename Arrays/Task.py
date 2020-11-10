@@ -33,4 +33,4 @@ def isMonotonicArray(arr : list) -> bool :
 
 #   driver code
 if __name__ == '__main__' : 
-    print(isMonotonicArray([1,2,3,4,5]))
+    print(isMonotonicArray([1,2,3,4,5])) 
