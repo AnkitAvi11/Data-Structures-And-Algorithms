@@ -63,6 +63,28 @@ class LinkedList :
 
         return total_nodes
 
+
+    #   method to get the sum of all the nodes in the linked list
+    def sum(self, head) : 
+        if head is None : return 0
+        return head.data + self.sum(head.next_node)
+
+
+    #   method to find the maximum element in the linked list
+    def max(self) : 
+        if self.head is None : 
+            return 0
+
+        largest = self.head.data
+
+        ptr = self.head.next_node
+
+        while ptr is not None : 
+            largest = max(largest, ptr.data)
+            ptr = ptr.next_node
+
+        return largest
+
 if __name__ == '__main__' : 
     linkedlist = LinkedList()
     linkedlist.append(1)
@@ -70,4 +92,5 @@ if __name__ == '__main__' :
     linkedlist.append(3)
     linkedlist.recursive_traversal(linkedlist.returnhead())
     print("total number of nodes = {}".format(linkedlist.return_number_of_nodes()))
-
+    print("Sum of all the nodes = {}".format(linkedlist.sum(linkedlist.returnhead())))
+    print("Largest element in the array = {}".format(linkedlist.max()))

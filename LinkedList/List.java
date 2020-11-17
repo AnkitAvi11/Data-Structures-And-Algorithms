@@ -72,6 +72,32 @@ class LinkedList {
         }
         return count;
     }
+
+    //  method to calculate the sum of all the nodes in the linked list
+    public long sum(Node head) {
+        if (head == null) return 0;
+        return head.data + sum(head.next);
+    }
+
+    //  method to get maximum
+    public int getmax(int m, int n) {
+        return m > n ? m : n;
+    }
+
+    //  method to get the maximum element from the linked list
+    public int max() {
+        if(this.head == null) return 0;
+
+        int largest = this.head.data;
+        Node ptr = this.head;
+
+        while(ptr!=null) {
+            largest = this.getmax(largest, ptr.data);ptr=ptr.next;
+        }
+
+        return largest;
+
+    }
     
 }
 
@@ -83,6 +109,8 @@ class List {
         ob.append(2);
         ob.append(3);
         ob.recursiveTraversal(ob.getHead());
-        System.out.print("Total number of nodes = "+ob.countNodes());
+        System.out.println("Total number of nodes = "+ob.countNodes());
+        System.out.println("Sum of nodes of the list = "+ob.sum(ob.getHead()));
+        System.out.println("Maximum element in the linked list = " + ob.max());
     }
 }
