@@ -51,9 +51,17 @@ class LinkedList :
 
     #   method to return the main node
     def returnhead(self) : return self.head
-        
+    
+    #   method to count the number of nodes in the linked list
+    def return_number_of_nodes(self) -> int: 
+        total_nodes = 0
+        ptr = self.head
 
+        while ptr is not None : 
+            total_nodes += 1
+            ptr = ptr.next_node
 
+        return total_nodes
 
 if __name__ == '__main__' : 
     linkedlist = LinkedList()
@@ -61,4 +69,5 @@ if __name__ == '__main__' :
     linkedlist.append(2)
     linkedlist.append(3)
     linkedlist.recursive_traversal(linkedlist.returnhead())
+    print("total number of nodes = {}".format(linkedlist.return_number_of_nodes()))
 
