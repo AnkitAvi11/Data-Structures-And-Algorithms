@@ -31,6 +31,7 @@ class LinkedList {
 
     }
 
+
     //  iterative method to traverse all the nodes of the linked list
     public void traverse() {
 
@@ -86,6 +87,7 @@ class LinkedList {
 
     //  method to get the maximum element from the linked list
     public int max() {
+
         if(this.head == null) return 0;
 
         int largest = this.head.data;
@@ -97,6 +99,28 @@ class LinkedList {
 
         return largest;
 
+    }
+
+    public int search(int sk) {
+        Node ptr = this.head;
+        while(ptr!=null) {
+            if(ptr.data == sk) {
+                return ptr.data;
+            }
+            ptr = ptr.next;
+        }
+        return -1;
+    }
+
+    public boolean isAscending() {
+        Node ptr = this.head;
+        while(ptr.next!=null) {
+            if(ptr.data > ptr.next.data) {
+                return false;
+            }
+            ptr = ptr.next;
+        }
+        return true;
     }
     
 }
