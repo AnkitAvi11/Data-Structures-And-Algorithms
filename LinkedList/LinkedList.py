@@ -128,6 +128,29 @@ class LinkedList :
         return True
 
 
+    #   method to make the list cyclic
+    def make_cyclic(self) : 
+        ptr = self.head
+
+        qptr = ptr.next_node.next_node
+
+        qptr.next_node = ptr
+        
+
+
+    #   method to check if the linked list contains a loop
+    def is_cyclic(self) : 
+        ptr , qptr = self.head, self.head.next_node
+
+        while ptr is not None and qptr is not None : 
+            if ptr == qptr : 
+                return True
+            ptr = ptr.next_node
+            qptr = qptr.next_node.next_node
+        
+        return False
+
+
     #   method to delete duplicates from the linked list
     def delete_duplicates(self) :
         has_seen = set()
@@ -145,7 +168,35 @@ class LinkedList :
                 prev = ptr
                 ptr = ptr.next_node
                 
+
+    #   method to find the middle element of the linked list
+    def middle_element(self) : 
+        if self.head is None : 
+            print('List is empty')
+            return
+
+
+        ptr = self.head
+        qptr = self.head
+
+        while qptr is not None : 
+            qptr = qptr.next_node
+            if qptr : 
+                qptr = qptr.next_node
+                ptr = ptr.next_node
+
+        return ptr.data              
                         
+
+    #   method to find the middle element of the linked list using a stack
+    def middle_element_stack(self) : 
+        ptr = self.head
+        result = list()
+        while ptr is not None : 
+            result.append(ptr.data)
+            ptr = ptr.next_node
+
+        return result[len(result)//2]
 
 
 if __name__ == '__main__' : 
@@ -154,12 +205,18 @@ if __name__ == '__main__' :
 
     linkedlist.append(1)
     linkedlist.append(1)
-    linkedlist.append(3)
+    linkedlist.append(4)
     linkedlist.append(3)
     linkedlist.append(5)
     linkedlist.append(5)
     linkedlist.append(1)
+    linkedlist.append(7)
+    linkedlist.append(8)
+    
     linkedlist.delete_duplicates()
+
+    print("Middle node = ", linkedlist.middle_element_stack())
+    print("Middle node = ", linkedlist.middle_element())
     
     linkedlist.recursive_traversal(linkedlist.returnhead())
     print("total number of nodes = {}".format(linkedlist.return_number_of_nodes()))
@@ -167,3 +224,7 @@ if __name__ == '__main__' :
     print("Largest element in the array = {}".format(linkedlist.max()))
     print(linkedlist.is_ascending())
     print(linkedlist)
+    linkedlist.make_cyclic()
+    print("Cyclic : ", linkedlist.is_cyclic())
+
+    
