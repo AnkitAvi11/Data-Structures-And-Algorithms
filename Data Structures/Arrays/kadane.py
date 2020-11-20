@@ -1,7 +1,7 @@
 #   kadanes' algorithms
 
 def max_contiguos_sum(arr : list) : 
-    sum_so_far = 0;current_sum = 0
+    sum_so_far = -9999;current_sum = 0
 
     for el in arr : 
         current_sum+=el
@@ -16,5 +16,5 @@ def max_contiguos_sum(arr : list) :
     
 
 if __name__ == "__main__":
-    print(max_contiguos_sum([-2,-3,4,-1,-2,1,5,-3]))
+    print(max_contiguos_sum([-1,-2,-3,-4]))
     
