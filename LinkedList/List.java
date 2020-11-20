@@ -1,3 +1,4 @@
+import java.util.*;
 
 //  Data structure to create node of the linked list
 class Node {
@@ -121,6 +122,15 @@ class LinkedList {
             ptr = ptr.next;
         }
         return true;
+    }
+
+    public void delete_duplicates() {
+        HashSet hashSet = new HashSet<>();
+        if (hashSet.contains(1)) {
+
+        }else{
+            
+        }
     }
     
 }

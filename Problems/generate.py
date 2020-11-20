@@ -4,7 +4,6 @@ Generate all the strings of length n drawn from 0 ... k -1
 
 """
 
-
 def get_substring(string, counter, result, level, k) : 
     if level == k : 
         print(result)
