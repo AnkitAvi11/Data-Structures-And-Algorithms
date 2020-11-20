@@ -199,9 +199,28 @@ class LinkedList :
         return result[len(result)//2]
 
 
+    #   method to find the intersection of the two linked list
+    def intersection(self, head : Node) : 
+        ptr = self.head
+        qptr = head
+
+        r1 = set();r2 = set()
+
+        while ptr is not None :
+            r1.add(ptr)
+            ptr = ptr.next_node
+
+        while qptr is not None : 
+            if qptr in r1 : 
+                return (True, qptr.data)
+        
+        return False
+
+
 if __name__ == '__main__' : 
 
     linkedlist = LinkedList()
+    newlist = LinkedList()
 
     linkedlist.append(1)
     linkedlist.append(1)
@@ -215,10 +234,13 @@ if __name__ == '__main__' :
     
     linkedlist.delete_duplicates()
 
+    print("intersection = ", linkedlist.intersection(newlist.returnhead()))
+
     print("Middle node = ", linkedlist.middle_element_stack())
     print("Middle node = ", linkedlist.middle_element())
     
     linkedlist.recursive_traversal(linkedlist.returnhead())
+    
     print("total number of nodes = {}".format(linkedlist.return_number_of_nodes()))
     print("Sum of all the nodes = {}".format(linkedlist.sum(linkedlist.returnhead())))
     print("Largest element in the array = {}".format(linkedlist.max()))
