@@ -4,6 +4,7 @@ Python program to reverse array in groups
 """
 import math
 
+#   function to reverse the array in groups
 def reverse_in_groups(arr : list, start : int, end : int) : 
 
     while start < end : 
@@ -12,6 +13,7 @@ def reverse_in_groups(arr : list, start : int, end : int) :
 
 
 
+#   main driver of the program for this problem statement
 if __name__ == '__main__' : 
     k = int(input("Enter the value of number of groups : "))
 
