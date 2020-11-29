@@ -41,7 +41,11 @@ class CreateQueue {
 
     public int delete() 
     {
-        return this.arr[1];
+        if(this.front == this.rear || this.front == -1) {
+            System.out.print("Stack underflow");
+            return -1;
+        }
+        return this.arr[this.front++];
     }
 
 }
@@ -57,7 +61,12 @@ public class Queue {
         queue.insert(3);
         queue.insert(3);
         queue.insert(3);
-        queue.insert(3);
+        System.out.println(queue.delete());
+        System.out.println(queue.delete());
+        System.out.println(queue.delete());
+        System.out.println(queue.delete());
+        System.out.println(queue.delete());
+        System.out.println(queue.delete());
         queue.traverse();
     }
 
