@@ -42,7 +42,7 @@ class CreateQueue {
     public int delete() 
     {
         if(this.front == this.rear || this.front == -1) {
-            System.out.print("Stack underflow");
+            System.out.print("Queue underflow");
             return -1;
         }
         return this.arr[this.front++];
