@@ -1,4 +1,3 @@
-import org.graalvm.compiler.graph.Node;
 
 class Node {
     protected int val;
@@ -59,6 +58,7 @@ class Queue{
 
 public class QueueList {
     public static void main(String[] args) {
-        
+        Queue queue = new Queue();
+        queue.insert(1);
     }
 }
