@@ -45,7 +45,7 @@ class Tree :
 
 
     #   method to traverse the entire tree (in order traversal)
-    def traverse(self, root) : 
+    def traverse(self, root) :  
         if not root : 
             return
 
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     tree.insert(3)
     tree.traverse(tree.get_root())
     search = tree.search(tree.get_root(),3)
-    if search == -1 : 
-        print('Element was not found in the tree')
-    else : 
-        print("Element was found : {} node".format(search.val))
+    
+    from array import *
+    myarray = array('i', [1,2,3])
+    print(myarray)
