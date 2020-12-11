@@ -9,7 +9,7 @@ class Node :
 
 #   class for creating and traversing a tree
 class Tree : 
-
+ 
     #   constructor for the class
     def __init__(self) : 
         self.root = None
@@ -56,11 +56,7 @@ class Tree :
 
     #   method to search a node in the tree
     def search(self, root, sk) : 
-        if root is None : 
-            return -1
-        else : 
-            pass
-
+        pass
 
     #   method to delete a node from the tree
     """
