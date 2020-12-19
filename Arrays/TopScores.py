@@ -1,8 +1,8 @@
 #   Top Scores program
 """
 You created a game that is more popular than angry birds.
-Each round, players receive a score between 0 and 100, which you can use to rank them from highest to lowest. So far you are using
-an algorithm that sorts in O(nlogn) time, but players are complaining that their ranking are not updated fast enough.
+Each round, players receive a score between 0 and 100, which you can use to rank them from highest to lowest. 
+So far you are using an algorithm that sorts in O(nlogn) time, but players are complaining that their ranking are not updated fast enough.
 you need a faster sorting algorithm.
 """
 
