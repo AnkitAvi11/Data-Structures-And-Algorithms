@@ -1,11 +1,14 @@
 # Algo-Expert | LeetCode | Hackerrank Solutions | Interview Cake
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-54-orange.svg?style=flat-square)](#contributors-)
-[![Star on GitHub](https://img.shields.io/github/stars/all-contributors/all-contributors.svg?style=social)](https://github.com/AnkitKumar1311/Data-Structures-And-Algorithms/stargazers)
+[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![GitHub forks](https://img.shields.io/github/forks/AnkitAvi11/Data-Structures-And-Algorithms.svg?style=social&label=Fork&maxAge=43200)](https://github.com/AnkitAvi11/Data-Structures-And-Algorithms/network/)
+[![GitHub stars](https://img.shields.io/github/stars/AnkitAvi11/Data-Structures-And-Algorithms.svg?style=social&label=Star&maxAge=43200)](https://github.com/AnkitAvi11/Data-Structures-And-Algorithms/stargazers/)
+
 
 ---
 
-This repository is mainly to maintain the solutions of **Algo-Expert Questions** alongwith **Leetcode** & **Hackerrank**. Algo-Expert offers with the following resources which are helpful for the students:
+This repository is mainly to maintain the solutions of *Algo-Expert Questions* alongwith *Leetcode* & *Hackerrank*. Algo-Expert offers with the following resources which are helpful for the students:
 
 1. 100 Hand Picked Questions
 2. 70+ Hours of Video Explanations
