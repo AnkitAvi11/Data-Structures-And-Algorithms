@@ -1,6 +1,6 @@
 # Algo-Expert | LeetCode | Hackerrank Solutions | Interview Cake
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![GitHub forks](https://img.shields.io/github/forks/AnkitAvi11/Data-Structures-And-Algorithms.svg?style=social&label=Fork&maxAge=43200)](https://github.com/AnkitAvi11/Data-Structures-And-Algorithms/network/)
 [![GitHub stars](https://img.shields.io/github/stars/AnkitAvi11/Data-Structures-And-Algorithms.svg?style=social&label=Star&maxAge=43200)](https://github.com/AnkitAvi11/Data-Structures-And-Algorithms/stargazers/)
